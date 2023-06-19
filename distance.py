@@ -13,7 +13,7 @@ while True:
 	distance = sensor.distance
 
 	# But we want it in centimetres
-	distance = sensor.distance * 100
+	distance = sensor.distance * 1000
 
 	# We would get a large decimal number so we will round it to 2 places
 	distance = round(sensor.distance, 2)
