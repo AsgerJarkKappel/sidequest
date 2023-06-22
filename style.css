@@ -3,12 +3,16 @@ body{
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
   
   li {
     float: left;
@@ -28,4 +32,8 @@ ul {
   
   .active {
     background-color: #04AA6D;
+  }
+
+  .one {
+    margin-top: 50px;
   }
