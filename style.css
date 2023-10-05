@@ -12,6 +12,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
+  display: block;
 }
   
   li {
@@ -37,3 +38,47 @@ ul {
   .one {
     margin-top: 50px;
   }
+
+  .face{
+    height: 30%;
+    width: 30%;
+    position: center;
+  }
+
+.textAllignCenter {
+  text-align: center;
+}
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height:100vh;
+  top: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.circleContainer {
+  background: orange;
+  padding: 3px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position:absolute;
+  overflow: auto;
+}
+img {
+  display: block;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  left: -100%;
+}
