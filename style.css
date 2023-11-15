@@ -1,4 +1,66 @@
 body{
-    background-color: white;
     margin: 0;
 }
+
+/*The order of item decide position on html, so navbar is first as it should be displayed on top*/
+.item-navbar { 
+  grid-area: nav;
+   
+}
+.navbar {
+  height: 10px;
+}
+
+.item1 { 
+  grid-area: header;
+}
+
+.item-sidebar { 
+  grid-area: side;
+}
+
+.sidebar-left {
+  width: 100%;
+  height: 95vh;
+  background-color: #78bb7b;
+}
+
+.circle-picture {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.item3 { 
+  grid-area: main;
+}
+
+
+
+.item5 { 
+  grid-area: footer;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav nav nav nav nav nav'
+    'side header header header header header'
+    'side main main main main main'
+    'side footer footer footer footer footer';
+  gap: 2px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /*Done so it only fits in wiewport atm, maybe it should be removed*/
+}
+
+.grid-container > div {
+  background-color:rgb(255, 242, 242); 
+  text-align: center;
+  padding: 0 0;
+  font-size: 30px;
+}
+
