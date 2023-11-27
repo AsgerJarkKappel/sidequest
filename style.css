@@ -2,6 +2,11 @@ body{
     margin: 0;
 }
 
+.item-title { 
+  grid-area: title;
+  background-color:  #b1cab2;;
+}
+
 /*The order of item decide position on html, so navbar is first as it should be displayed on top*/
 .item-navbar { 
   grid-area: navbar;
@@ -14,24 +19,20 @@ body{
   .sidebar-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /*maybe change*/
     align-items: center;
-    gap: 10px;
     height: 95vh;
-    min-width: 300px;
-    background-color: #78bb7b;
-    border-radius: 0%;
-    overflow: hidden;
+    background-color: #b1cab2;
   }
 
-  /*backgroundcircle for image*/
-  .item-circleContainer {
+  /*backgroundcircle for image (FUCK WITH FLEXBOX FOR SOME REASON)*/
+  /*.item-circleContainer {
     background: rgb(59, 59, 59);
     display: flex;
     justify-content: center;
     width: 300px;
     height: 300px;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
     position: absolute;
     overflow: hidden;
@@ -47,6 +48,42 @@ body{
       left: -100%;
     }
   
+  }*/
+
+  .item-pictureCircle{
+    width:80%;
+    padding-bottom:80%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    background-image: ;
+    border-radius:50%;
+    margin-top: 10%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item-pictureCircle img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+
+  .item-about{
+    color: white;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid white;
   }
 
 
@@ -73,11 +110,11 @@ body{
   gap: 0px 0px; 
   grid-template-areas: 
     "navbar navbar navbar navbar navbar navbar"
-    "sidebar main main main main main"
+    "sidebar title title title title title"
     "sidebar main main main main main"
     "sidebar main main main main main"
     "sidebar main main main main main";
-  gap: 2px;
+  gap: 0px;
   background-color: white;
   width: 100vw;
   height: 100vh;
@@ -85,9 +122,16 @@ body{
 }
 
 .grid-container > div {
-  background-color:rgb(255, 242, 242); 
   text-align: center;
   padding: 0 0;
   font-size: 30px;
+}
+
+h1{
+  color: white;
+}
+
+h3{
+  color: white;
 }
 
