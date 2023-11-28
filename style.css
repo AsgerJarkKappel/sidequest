@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-size: 100%;
 }
 
 .item-title { 
@@ -20,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 95vh;
+    height: fit-content;
     background-color: #b1cab2;
   }
 
@@ -53,13 +54,10 @@ body{
   .item-pictureCircle{
     width:80%;
     padding-bottom:80%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-    background-image: ;
+    border: solid 3px white;
     border-radius:50%;
     margin-top: 10%;
-    display: inline-block;
+    display: block;
     overflow: hidden;
     position: relative;
   }
@@ -80,10 +78,53 @@ body{
   .item-about{
     color: white;
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 80%;
     margin: 10px;
     border: 2px solid white;
+    font-size: 100%;
+  }
+
+  .item-about h5{
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+  }
+
+  .item-about p{
+    color: white;
+    font-size: 0.57em;
+    text-align: left;
+  }
+
+  .item-contact{
+    color: white;
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+    border: 2px solid white;
+    font-size: 100%;
+  }
+
+  .item-contact h5{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+  } 
+  .item-contact p{
+    line-height: 2.2em;
+    font-size: 15px;
+    text-align: left;
+  } 
+
+  .thick-text{
+    font-weight: bold;
+    letter-spacing:0.04em;
+  }
+
+  .small-linkedIn{
+    width: 30%;
+    height: 30%;
   }
 
 
@@ -118,7 +159,7 @@ body{
   background-color: white;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /*Done so it only fits in wiewport atm, maybe it should be removed*/
+  overflow:auto; /*Done so it only fits in wiewport atm, maybe it should be removed*/
 }
 
 .grid-container > div {
