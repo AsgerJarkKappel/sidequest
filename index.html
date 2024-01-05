@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script src="app.js"></script>
         <div class="grid-container">
             <div class="item-navbar">nav</div>
                 
@@ -36,15 +37,73 @@
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Phone:</span> 53384896</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">E mail:</span> asger.k@hotmail.com</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Address: </span> Søndre Ringgade 77, st tv 8000 Århus</span></p>
-                        <p><a href="www.linkedin.com/in/asger-jark-kappel-571799221"><img class="small-linkedIn" src="Resources/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
+                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="Resources/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
                     </div>
                 </aside>
             </div>
             <div class="item-title">
                 <h1> Asger Jark Kappel</h1>
                 <h3>Cand.IT</h3>
+                <div class="button_container">
+                    <button onclick="showContent('education')">school</button>
+                    <button onclick="showContent('work')">Work</button>
+                </div>
+            </div> 
+            <div id="education" class="container_cv">
+                <div class="container_cv_date">
+                    <h3>Forberedelsesskolen</h3>
+                    <span class="cv_date">2007-2014</span>
+                </div>
+                <div class="container_cv_about">
+                    <span>Folkeskole</span>
+                </div>
+                
+                <div class="container_cv_date">
+                    <h3>Paderup Gymnasium</h3>
+                    <span class="cv_date">2014-2017</span>
+                </div>
+                <div class="container_cv_about">
+                    <span>Gymnasium (Highschool) specializing in nature science, specifically in Physics and Math
+                    </span>
+                </div>
+                
+                <div class="container_cv_date">
+                    <h3>Aarhus Univeristy</h3>
+                    <span class="cv_date">2018-2021</span>
+                </div>
+                <div class="container_cv_about">
+                    <p>Bachelor in IT-Product Development</p>
+                </div>
+
+                <div class="container_cv_date">
+                    <h3>Aarhus Univeristy</h3>
+                    <span class="cv_date">2021-2023</span>
+                </div>
+                <div class="container_cv_about">
+                    <p>Masters in IT-Product Development</p>
+                </div>
+            </div>  
+            <!--Style="display: none; is for hiding the elements when loading page, IDK if there is a better way    "-->
+            <div id="work" class="container_cv" style="display: none;">
+                <div class="container_cv_date">
+                    <h3>Develvo products</h3>
+                    <p class="cv_date">Quality assurance</p>
+                    <p class="cv_date">2017-2018</p>
+                </div>
+                <div class="container_cv_about">
+                    <span>Folkeskole</span>
+                </div>
+                
+                <div class="container_cv_date">
+                    <h3>Paderup Gymnasium</h3>
+                    <span class="cv_date">2014-2017</span>
+                </div>
+                <div class="container_cv_about">
+                    <span>Gymnasium (Highschool) specializing in nature science, specifically in Physics and Math
+                    </span>
+                </div>
             </div>
-            <div class="item3">Main</div>  
+        </div>
         </div>
     </body>
 </html></body></html>

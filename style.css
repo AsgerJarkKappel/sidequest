@@ -138,12 +138,6 @@ body{
   
 }
 
-
-.item3 { 
-  grid-area: main;
-}
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr; 
@@ -176,3 +170,44 @@ h3{
   color: white;
 }
 
+.container_cv { 
+  grid-area: main;
+  display: grid; 
+  grid-template-columns: 0.6fr 1.4fr; 
+  grid-template-rows: fit-content fit-content fit-content fit-content; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."
+    ". ."
+    ". ."
+    ". ."; 
+  overflow: hidden;
+}
+
+.container_cv_date{
+  background-color: lightblue;
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.container_cv_about{
+  background-color: lightblue;
+  border: 2px solid black;
+  width: 100%;
+  min-height: fit-content;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv_date{
+  color: white;
+  margin: 5px;
+}
