@@ -1,11 +1,15 @@
 body{
     margin: 0;
+    padding: 0;
     font-size: 100%;
+    background-color: #b1cab2; 
+    scrollbar-gutter: stable; 
+    overflow-x: hidden; /*hides horizontal scrollbar*/
+    box-sizing: border-box;
 }
 
 .item-title { 
   grid-area: title;
-  background-color:  #b1cab2;;
 }
 
 /*The order of item decide position on html, so navbar is first as it should be displayed on top*/
@@ -22,7 +26,6 @@ body{
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    background-color: #b1cab2;
   }
 
   /*backgroundcircle for image (FUCK WITH FLEXBOX FOR SOME REASON)*/
@@ -150,10 +153,9 @@ body{
     "sidebar main main main main main"
     "sidebar main main main main main";
   gap: 0px;
-  background-color: white;
   width: 100vw;
   height: 100vh;
-  overflow:auto; /*Done so it only fits in wiewport atm, maybe it should be removed*/
+  /*overflow:auto; /*Done so it only fits in wiewport atm, maybe it should be removed*/
 }
 
 .grid-container > div {
@@ -170,19 +172,48 @@ h3{
   color: white;
 }
 
-.container_cv { 
+.content_title {
+  padding: 5px;
+  margin: 20px;
+  color: black;
+} 
+
+.container_cv.active { 
   grid-area: main;
-  display: grid; 
-  grid-template-columns: 0.6fr 1.4fr; 
-  grid-template-rows: fit-content fit-content fit-content fit-content; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". ."
-    ". ."
-    ". ."
-    ". ."; 
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-right: 5%;/*Margin done so i can see border radius on right, below is so the distance looks correct on the left*/
+  margin-left: 2.5%;
 }
+
+.container_cv{
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.content_small{
+  align-items: center;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.content_large{
+  flex-grow: 4;
+}
+
 
 .container_cv_date{
   background-color: lightblue;
@@ -208,6 +239,6 @@ h3{
 }
 
 .cv_date{
-  color: white;
+  color: black;
   margin: 5px;
 }

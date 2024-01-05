@@ -1,15 +1,16 @@
-function showContent(contentId) {
-    education.style.display = 'grid';
-    work.style.display = 'none';
-    // Toggle the visibility of grid items
-    var content1 = document.getElementById('education');
-    var content2 = document.getElementById('work');
+const work = document.querySelector("#work");
+const education = document.querySelector("#education");
 
-    if (contentId === 'education') {
-      education.style.display = 'grid';
-      work.style.display = 'none';
-    } else if (contentId === 'work') {
-      education.style.display = 'none';
-      work.style.display = 'grid';
-    }
-  }
+function changeContent(contentId) {
+    var elements = document.querySelectorAll('.container_cv');
+      elements.forEach(function(element) {
+        element.classList.remove('active');
+      });
+
+      // Show the selected element
+      var selectedElement = document.getElementById(contentId);
+      //If statement ensures that the element exist so the script does not throw an error
+      if (selectedElement) {
+        selectedElement.classList.add('active');
+      }
+}
