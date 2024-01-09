@@ -181,11 +181,14 @@ h3{
 .container_cv.active { 
   grid-area: main;
   display: flex;
+  border: white 2px solid;
+  border-radius: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   margin-right: 5%;/*Margin done so i can see border radius on right, below is so the distance looks correct on the left*/
   margin-left: 2.5%;
+  height: fit-content;
 }
 
 .container_cv{
@@ -196,8 +199,10 @@ h3{
   display: flex;
   flex-direction: row;
   justify-content: start;
-  width: 100%;
-  margin-top: 10px;
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  margin-bottom: 0px;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
@@ -241,4 +246,59 @@ h3{
 .cv_date{
   color: black;
   margin: 5px;
+}
+
+.contentText{
+  font-size: 20px;
+}
+
+/*For pop-up window*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); /* Apply blur effect to the backdrop */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.modal-content img{
+  max-width: 100%;
+  max-height: 80vh; /* Limit image height to 80% of the viewport height */
+  border-radius: 8px;
+  margin-top: 15px; /* Add some top margin for spacing */
 }

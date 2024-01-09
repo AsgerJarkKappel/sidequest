@@ -45,7 +45,8 @@
             <div class="item-title">
                 <h1> Asger Jark Kappel</h1>
                 <h3>Cand.IT</h3>
-                <div class="button_container">
+                <div class="button_container"> 
+                    <span style="color: white;">Toggle between Education and work relavance</span>
                     <button id="educationButton" onclick="changeContent('education')">school</button>
                     <button id="workButton" onclick="changeContent('work')">Work</button>
                 </div>
@@ -56,12 +57,13 @@
                     <div class="content-small">
                         <h3 class="content_title">Aarhus Univeristy</h3>
                         <p class="cv_date">2021-2023</p>
-                        <p class="cv_date">Masters in IT-Product Development</p>
+                        <p class="cv_date">Master degree</p>
                     </div>
                     <div class="content-large">
-                        <p>lkjadlkJADÆ</p>
-                        <p>LKHAFLKSJFNAKL</p>
-                        <p>KJALFLKAÆF</p>
+                        <p><span class="contentText"><span style="font-weight: bold;">Natural science:</span> IT-Product Development</span></p>
+                        <p><button id="MasterCoursesButton" onclick="openModal('masterCourses')">Press to see curse list</button></p>
+                        <p><span class="contentText"><span style="font-weight: bold;">Thesis: </span> An Exploration of Situated and Casual
+                            Data Visualization for Lowering Shower Consumption</span></p>
                     </div>
                 </div>
 
@@ -69,12 +71,13 @@
                     <div class="content-small">
                         <h3 class="content_title">Aarhus Univeristy</h3>
                         <p class="cv_date">2018-2021</p>
-                        <p class="cv_date">Masters in IT-Product Development</p>
+                        <p class="cv_date">Bachelor Degree</p>
                     </div>
                     <div class="content-large">
-                        <p>POKAÅFOSF</p>
-                        <p>LJAFÆLKSJD</p>
-                        <p>LKJAFÆLKJ</p>
+                        <p><span class="contentText"><span style="font-weight: bold;">Natural science:</span> IT-Product Development</span></p>
+                        <p><button id="BachelorCoursesButton" onclick="openModal('bachelorCourses')">Press to see curse list</button></p>
+                        <p><span class="contentText"><span style="font-weight: bold;">Thesis: </span> An Exploration of Situated and Casual
+                            Data Visualization for Lowering Shower Consumption</span></p>
                     </div>
                 </div>
 
@@ -135,6 +138,27 @@
                         <p>LKJAFÆLKJ</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!--Pop up grades-->
+        <div id="masterCourses" class="modal">
+            <div class="backdrop" onclick="closeModal('masterCourses')"></div>
+            <div class="modal-content">
+                <!--&times; is the little x when the pop-up is showing-->
+              <span class="close" onclick="closeModal('masterCourses')">&times;</span>
+              <h2>Master Degree Courses</h2>
+              <img src="Resources/kandidat_fag.png" alt="Courses"/>
+            </div>
+        </div>
+
+        <div id="bachelorCourses" class="modal">
+            <div class="backdrop" onclick="closeModal('bachelorCourses')"></div>
+            <div class="modal-content">
+                <!--&times; is the little x when the pop-up is showing-->
+              <span class="close" onclick="closeModal('bachelorCourses')">&times;</span>
+              <h2>Master Degree Courses</h2>
+              <img src="Resources/BachelorFag.png" alt="Courses"/>
             </div>
         </div>
     </body>
