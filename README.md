@@ -2,6 +2,8 @@
 
 - Check if you can remove one of the pop-up html elements by changing the source of the image with javaScript, this would clean up the code.
 
+- Look at responiveness (A lot needs addressing)
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
