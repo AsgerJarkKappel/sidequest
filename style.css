@@ -213,13 +213,10 @@ h3{
   flex: 1;
 }
 
-.red{
-  background-color: red;
+.left{
+  margin-left: 2.5%;
 }
 
-.blue{
-  background-color: blue;
-}
 .cv_date{
   color: black;
   margin: 5px;
@@ -278,4 +275,12 @@ h3{
   max-height: 80vh; /* Limit image height to 80% of the viewport height */
   border-radius: 8px;
   margin-top: 15px; /* Add some top margin for spacing */
+}
+
+.button_container{
+  margin-right: 2.5%;
+}
+
+.italic{
+  font-style: italic;
 }
