@@ -4,6 +4,14 @@
 
 - Look at responiveness (A lot needs addressing)
 
+# TODO landing-page
+
+- insert links in menu so navigational
+- Screen size
+- investigate feedback for buttons when pressing
+- Refactor code for dublication
+- color palette!!!
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
