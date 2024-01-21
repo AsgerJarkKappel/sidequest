@@ -1,5 +1,5 @@
 body{
-    background-color: #c6dabf;
+    background-color: #dde1e7;
     font-family: 'Open Sans', sans-serif;
     
 }
@@ -8,13 +8,13 @@ h1{
 }
 
 @media only screen and (max-width: 600px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0%;
-        overflow: hidden;
-    }
+   body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0%;
+      overflow: hidden;
+   }
     
     .nav-container{
         width: 100%;
@@ -29,8 +29,67 @@ h1{
     .material-icons.md-36 { 
         font-size: 36px;
         margin-left: auto;
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0);
      }
 
+     .modal {
+         display: none;
+         position: fixed;
+         z-index: 1;
+         left: 0;
+         top: 1px;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+      }
+
+   .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px); /* Apply blur effect to the backdrop */
+   }
+
+   .modal-content {
+      position: relative;
+      background: #fff;
+      width: 300px;
+      min-height: 500px;
+      float: right;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      
+   }
+
+   .modal-content a {
+      font-size: 32px;
+      color: black;
+      background-color: #d3d3d3;
+      width: 80%;
+      height: 25%;
+      border-radius: 10px;
+   }
+
+   .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #555;
+   }
+
+   
      .content-container{
         display: flex;
         flex-direction: column;
@@ -59,7 +118,7 @@ h1{
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.753);
         flex: 1;
         border-radius: 10px;
         
@@ -72,6 +131,11 @@ h1{
         border: 0px;
         /*IDK how troede vh var viewport size, vidst et hack*/
         border-radius: 50vh;
+     }
+
+     .nav-btn a{
+        text-decoration: none;
+        font-weight: bold;
      }
      
 
@@ -86,6 +150,8 @@ h1{
         font-size: 32;
         color: black;
      }
+
+     
 
 }
 

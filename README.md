@@ -11,6 +11,7 @@
 - investigate feedback for buttons when pressing
 - Refactor code for dublication
 - color palette!!!
+- dropdown is just a modal view, look into this, might not be the best
 
 ## Getting started
 
