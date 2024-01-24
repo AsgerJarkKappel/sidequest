@@ -5,30 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
     <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="landing-page.js"></script>
+    <script src="header.js"></script>
 </head>
+<header><nav-element></nav-element></header>
 <body>
-
-    <!-- Top Navigation Menu -->
-    <div class="nav-container">
-        <button class="material-icons md-36" id="dropDownContent" onclick="openModal('dropDownMenu')">menu</button>
-        <div id="dropDownMenu" class="modal">
-            <div class="backdrop" onclick="closeModal('dropDownMenu')"></div>
-            <div class="modal-content">
-                <!--&times; is the little x when the pop-up is showing-->
-              <span class="close" onclick="closeModal('dropDownMenu')">&times;</span>
-                <a href="/cv.html">About me</a>
-                <a href="/cv.html">About me</a>
-                <a href="/cv.html">About me</a>
-            </div>
-        </div>
-    </div>
-
+    
+    
     <div class="content-container">
         <div class="presentation">
             <p class="greetings">Hello!</p>

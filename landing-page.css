@@ -1,7 +1,10 @@
+/*done for each page, makes navbar look right on phones*/
+header {width: 100%;}
+
 body{
-    background-color: #dde1e7;
-    font-family: 'Open Sans', sans-serif;
-    
+   background-color: #dde1e7;
+   font-family: 'Open Sans', sans-serif;
+   margin: 0; 
 }
 h1{
     color: white;
@@ -32,63 +35,6 @@ h1{
         border: 0px;
         background-color: rgba(0, 0, 0, 0);
      }
-
-     .modal {
-         display: none;
-         position: fixed;
-         z-index: 1;
-         left: 0;
-         top: 1px;
-         width: 100%;
-         height: 100%;
-         overflow: auto;
-      }
-
-   .backdrop {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(8px); /* Apply blur effect to the backdrop */
-   }
-
-   .modal-content {
-      position: relative;
-      background: #fff;
-      width: 300px;
-      min-height: 500px;
-      float: right;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      z-index: 2;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      
-   }
-
-   .modal-content a {
-      font-size: 32px;
-      color: black;
-      background-color: #d3d3d3;
-      width: 80%;
-      height: 25%;
-      border-radius: 10px;
-   }
-
-   .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-      cursor: pointer;
-      color: #555;
-   }
-
    
      .content-container{
         display: flex;
@@ -138,21 +84,11 @@ h1{
         font-weight: bold;
      }
      
-
-     .greetings{
-        font-size: 42px;
-        color: Black;
-        text-align: center;
-        
-     }
-     .under-title{
+      .under-title{
         margin: 2.5%;
         font-size: 32;
         color: black;
-     }
-
-     
-
+      }
 }
 
 @media only screen and (min-width: 768px) {
