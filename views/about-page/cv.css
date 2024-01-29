@@ -144,10 +144,9 @@ body{
 .grid-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 50px 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "navbar navbar navbar navbar navbar navbar"
     "sidebar title title title title title"
     "sidebar main main main main main"
     "sidebar main main main main main"

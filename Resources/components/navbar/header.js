@@ -2,21 +2,73 @@
 const host = document.querySelector("#header");
 
 const template = document.createElement("template");
+//Read comment!!!
 template.innerHTML = `
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="nav.css">
-    
+<!--Shit dont work unluss the style code is in the file--><link rel="stylesheet" href="../../nav.css">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  grid-area: nav;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #88d498;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  .topnav a{display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>    
 <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="#news">Projects</a>
+    <a href="/cv.html">About me</a>
+    <a href="../../about-page/cv.html">Contact me</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
 </div>`;
 
-class Test extends HTMLElement {
+class NavBar extends HTMLElement {
   constructor() {
     super();
     const host = document.querySelector("#header");
@@ -24,7 +76,7 @@ class Test extends HTMLElement {
     shadow.append(template.content.cloneNode(true));
   }
 }
-customElements.define("nav-element", Test);
+customElements.define("nav-element", NavBar);
 
 function myFunction() {
   console.log("Button pressed");

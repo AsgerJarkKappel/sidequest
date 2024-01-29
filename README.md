@@ -13,6 +13,16 @@
 - color palette!!!
 - dropdown is just a modal view, look into this, might not be the best
 
+# TODO navbar
+
+- Active class should be true on each page
+
+# TODO navbar
+
+- look into file structure, specifically get nav.css to work by having style in a seperate file
+- Fix bugs: NAvbar not working
+- have file structure fuckied it up?
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
