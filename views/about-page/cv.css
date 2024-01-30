@@ -1,10 +1,6 @@
 body{
-    margin: 0;
     padding: 0;
     font-size: 100%;
-    background-color: #b1cab2; 
-    scrollbar-gutter: stable; 
-    overflow-x: hidden; /*hides horizontal scrollbar*/
     box-sizing: border-box;
 }
 

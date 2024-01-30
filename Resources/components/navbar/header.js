@@ -2,10 +2,9 @@
 const host = document.querySelector("#header");
 
 const template = document.createElement("template");
-//Read comment!!!
+//Removed style link for navbar an inserted it hear as it becomes txt and that is not supported MIME type... idk
 template.innerHTML = `
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--Shit dont work unluss the style code is in the file--><link rel="stylesheet" href="../../nav.css">
 <style>
 .topnav {
   overflow: hidden;
@@ -59,7 +58,7 @@ template.innerHTML = `
 }
 </style>    
 <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
+    <a href="#home" class="active" onclick="navigateToHome()>Home</a>
     <a href="#news">Projects</a>
     <a href="#about">About me</a>
     <a href="#about">Contact me</a>
@@ -92,4 +91,9 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+
+function navigateToHome() {
+  console.log("button pressed");
+  window.location.href = "../about-page/cv.html";
 }

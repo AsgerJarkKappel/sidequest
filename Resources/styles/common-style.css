@@ -4,10 +4,8 @@ header {width: 100%;}
 body{
    background-color: #dde1e7;
    font-family: 'Open Sans', sans-serif;
-   display: flex; 
-   flex-direction: column;
-   align-items: center;
-   margin: 0%;
-   gap: 2.5%;
+   margin: 0;
+   scrollbar-gutter: stable; 
+    overflow-x: hidden; /*hides horizontal scrollbar*/
 }
 /*Should perhaps redo this as flex isnt for every case*/
