@@ -61,8 +61,8 @@ template.innerHTML = `
 <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#news">Projects</a>
-    <a href="/cv.html">About me</a>
-    <a href="../../about-page/cv.html">Contact me</a>
+    <a href="#about">About me</a>
+    <a href="#about">Contact me</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../common-style.css">
     <script src="../../Resources/components/navbar/header.js"></script>
+    <script src="landing-page.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <div class="content-container">
         <div class="presentation">
             <div class="pic-container">
-                        <img src="../../Resources/profilePic.png" alt="My face"/>
+                        <img src="../../Resources/images/profilePic.png" alt="My face"/>
                     </div>
             <p class="greetings">Hello!</p>
             <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
@@ -31,7 +32,7 @@
 
         <div class="navigation-buttons-container">
             <button class="nav-btn">Projects</button>
-            <button class="nav-btn"><a href="../about-page/cv.html">About me</a></button>
+            <button id="aboutMeBtn" onclick="navigateToAboutMe()" class="nav-btn">About me</a></button>
             <button class="nav-btn">Contact</button>
         </div>
     </div>
