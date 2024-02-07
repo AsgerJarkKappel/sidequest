@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Landing page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"><!--IDK what the fuck-->
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script><!--IDK what the fuck-->
+  </head>
+  <body>
+    <header>
+        <!--<a href="#home"><img class="headerLogo" src="res/android-chrome-512x512.png"></a>-->
+        <nav class="topnav">
+            <!--These link are what makes the navigation possible-->
+            <a href="#home" class="navigators">Home</a> 
+            <a href="#about" class="navigators">About</a> 
+            <a href="#projects" class="navigators">Projects</a> 
+            <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+    <main>
+        <!--This section is the section that changes!-->
+        <section id="mainContent"></section>
+    </main>
+    <script src="scripts/mde.js"></script>
+
+    <!--The following two scripts are used for the navigation.
+    The sections.js-script just has html and a getter function and does
+    not need to be in a seperate document.-->
+    <script src="scripts/sections.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

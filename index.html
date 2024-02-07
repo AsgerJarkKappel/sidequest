@@ -12,44 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/common-style.css">
     <link rel="stylesheet" href="/Resources/components/navbar/nav.css"
-    <script src="/scripts/landing-page.js"></script>
     <script src="/Resources/components/navbar/header.js"></script>
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 </head>
 
 <body>
     <!-- This was component, backlog!!
         <header id="header"><nav-element></nav-element></header>-->   
-    <nav>   
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="#news">Projects</a>
-        <a href="/views/cv.html">About me</a>
-        <a href="#about">Contact me</a>
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    </nav>
-    
-    <div class="content-container">
-        <div class="presentation">
-            <div class="pic-container">
-                        <img src="/Resources/images/profilePic.png" alt="My face"/>
-                    </div>
-            <p class="greetings">Hello!</p>
-            <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
-            <p class="under-title">I'm interested in <span style="font-weight: bold;">UI/UX design</span> and work as a <span style="font-weight: bold;">Front-end developer</span>.
-                This website is my portfolio and it will be updated with new projects and features to highlight my skills within IT and Design. Feel free to explore and contact me!
-            </p>
-        </div>
-
-        <div class="navigation-buttons-container">
-            <button class="nav-btn">Projects</button>
-            <button id="aboutMeBtn" onclick="navigateToAboutMe()" class="nav-btn">About me</a></button>
-            <button class="nav-btn">Contact</button>
-        </div>
-    </div>
-
-
+    <header>
+        <nav> 
+                <a href="#home" class="navigators">Home</a>
+                <a href="#news" class="navigators">Projects</a>
+                <a href="#about" class="navigators"">About me</a>
+                <a href="#contact" class="navigators">Contact me</a>
+                <!--<a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>-->
+            
+        </nav>
+    </header>
+    <main>
+        <section id="mainContent"></section>
+    </main>
+<script src="scripts/sections.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
