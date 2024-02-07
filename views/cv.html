@@ -4,19 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV</title>
-        <link rel="stylesheet" href="cv.css">
-        <link rel="stylesheet" href="../../Resources/styles/common-style.css">
-        <script src="../../Resources/components/navbar/header.js"></script>
+        <link rel="stylesheet" href="../styles/cv.css">
+        <link rel="stylesheet" href="../styles/common-style.css">
+        <script src="../Resources/components/navbar/header.js"></script>
+        <script src="../scripts/about-me.js"></script>
+        <link rel="stylesheet" href="../Resources/components/navbar/nav.css">
     </head>
     <body>
-        <header id="header"><nav-element></nav-element></header>    
-        <script src="about-me.js"></script>
+       <!-- This was component, backlog!!
+        <header id="header"><nav-element></nav-element></header>-->    
+
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="/project-page.html">Projects</a>
+            <a href="/cv.html">About me</a>
+            <a href="#about">Contact me</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
         <div class="grid-container">
                 
             <div class="item-sidebar">
                 <aside class="sidebar-left">
                     <div class="item-pictureCircle">
-                        <img src="../../Resources/images/profilePic.png" alt="My face"/>
+                        <img src="../Resources/images/profilePic.png" alt="My face"/>
                     </div>
                     
                     <div class="item-about"><h5>About</h5>
@@ -39,7 +52,7 @@
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Phone:</span> 53384896</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">E mail:</span> asger.k@hotmail.com</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Address: </span> Søndre Ringgade 77, st tv 8000 Århus</span></p>
-                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="../../Resources/images/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
+                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="../Resources/images/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
                     </div>
                 </aside>
             </div>
@@ -147,7 +160,7 @@
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('masterCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="../../Resources/images/kandidat_fag.png" alt="Courses"/>
+              <img src="../Resources/images/kandidat_fag.png" alt="Courses"/>
             </div>
         </div>
 
@@ -157,7 +170,7 @@
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('bachelorCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="../../Resources/images/BachelorFag.png" alt="Courses"/>
+              <img src="../Resources/images/BachelorFag.png" alt="Courses"/>
             </div>
         </div>
     </body>

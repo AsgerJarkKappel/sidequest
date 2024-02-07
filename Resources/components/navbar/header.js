@@ -1,5 +1,5 @@
 //This renders the navbar on each page. Hidden in the shadow dom for encapsulation
-const host = document.querySelector("#header");
+/**const host = document.querySelector("#header");
 
 const template = document.createElement("template");
 //Removed style link for navbar an inserted it hear as it becomes txt and that is not supported MIME type... idk
@@ -37,7 +37,7 @@ template.innerHTML = `
 }
 
 
-@media screen and (max-width: 900px) {
+/**@media screen and (max-width: 900px) {
   .topnav a{display: none;}
   .topnav a.icon {
     float: right;
@@ -58,11 +58,11 @@ template.innerHTML = `
 }
 </style>    
 <div class="topnav" id="myTopnav">
-    <a href="#home" class="active" onclick="navigateToHome()>Home</a>
+    <a href="../index.html" class="active">Home</a>
     <a href="#news">Projects</a>
-    <a href="#about">About me</a>
+    <a href="/views/cv.html">About me</a>
     <a href="#about">Contact me</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon">
         <i class="fa fa-bars"></i>
     </a>
 </div>`;
@@ -95,5 +95,35 @@ function myFunction() {
 
 function navigateToHome() {
   console.log("button pressed");
-  window.location.href = "../about-page/cv.html";
+
+  location = window.location;
+
+  console.log(location);
+
+  location.assign("http://127.0.0.1:5500/views/landing-page/landing-page.html");
+
+  window.location.href = location;
+}
+
+function navigateToAboutMe() {
+  console.log("button pressed");
+
+  //window.location.href = "../../veiws/";
+}
+
+function navigateToProjects() {
+  console.log("button pressed");
+
+  //window.location.href = "../../veiws/";
+}*/
+
+function myFunctionNew() {
+  console.log("Button pressed");
+  //You have to know the host-node (header element, now with ID) of the shadow root (the template) to query the element.
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }

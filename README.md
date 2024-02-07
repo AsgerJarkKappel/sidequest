@@ -6,12 +6,11 @@
 
 # TODO landing-page
 
-- insert links in menu so navigational
-- Screen size
-- investigate feedback for buttons when pressing
-- Refactor code for dublication
 - color palette!!!
-- dropdown is just a modal view, look into this, might not be the best
+
+# TODO About page
+
+- i think remake it, it looks ugly and it is not responsive
 
 # TODO navbar
 
@@ -19,9 +18,9 @@
 
 # TODO navbar
 
-- look into file structure, specifically get nav.css to work by having style in a seperate file
 - Fix bugs: NAvbar not working
-- have file structure fuckied it up?
+
+- backlog - make it a component instead of code duplication
 
 ## Getting started
 

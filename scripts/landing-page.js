@@ -21,8 +21,3 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-function navigateToAboutMe() {
-  console.log("button pressed");
-  window.location.href = "../about-page/cv.html";
-}

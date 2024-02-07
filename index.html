@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
-    <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="/styles/landing-page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../Resources/styles/common-style.css">
-    <script src="../../Resources/components/navbar/header.js"></script>
-    <script src="landing-page.js"></script>
+    <link rel="stylesheet" href="/styles/common-style.css">
+    <link rel="stylesheet" href="/Resources/components/navbar/nav.css"
+    <script src="/scripts/landing-page.js"></script>
+    <script src="/Resources/components/navbar/header.js"></script>
 </head>
 
 <body>
-    <header id="header"><nav-element></nav-element></header>    
+    <!-- This was component, backlog!!
+        <header id="header"><nav-element></nav-element></header>-->   
+    <nav>   
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#news">Projects</a>
+        <a href="/views/cv.html">About me</a>
+        <a href="#about">Contact me</a>
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    </nav>
     
     <div class="content-container">
         <div class="presentation">
             <div class="pic-container">
-                        <img src="../../Resources/images/profilePic.png" alt="My face"/>
+                        <img src="/Resources/images/profilePic.png" alt="My face"/>
                     </div>
             <p class="greetings">Hello!</p>
             <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>

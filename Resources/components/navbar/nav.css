@@ -1,7 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
-  grid-area: nav;
+  width: 100%;
 }
 
 .topnav a {
