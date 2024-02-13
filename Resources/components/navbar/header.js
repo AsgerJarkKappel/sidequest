@@ -121,9 +121,9 @@ function myFunctionNew() {
   console.log("Button pressed");
   //You have to know the host-node (header element, now with ID) of the shadow root (the template) to query the element.
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  if (x.className === "nav") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "nav";
   }
 }

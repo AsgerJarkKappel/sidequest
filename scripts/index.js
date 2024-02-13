@@ -41,7 +41,8 @@ function onHashChange() {
 
   //Only used for example content, but it is necessary to
   // call, since the page is not reloaded when changing the hash.
-  loadEditor(windowHash === "editor");
+  //REmoved as i dont use that js file containing method. Look at SPA folder under downloads
+  //loadEditor(windowHash === "editor");
 }
 
 /**

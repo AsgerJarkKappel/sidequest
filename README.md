@@ -4,6 +4,10 @@
 
 - Look at responiveness (A lot needs addressing)
 
+# BUG-List
+
+- The navbar disappears when the screen is made big again, but only after the hamburger menu has been pressed. Hamburger -> Close dropdown -> resize to big screen -> no navbar links
+
 # TODO landing-page
 
 - color palette!!!
@@ -19,6 +23,8 @@
 # TODO navbar
 
 - Fix bugs: NAvbar not working
+- Like to make it more button like in drop down and topnav, just for easier nav
+- Also when pressing next to box it should shut down, like on cv page.
 
 - backlog - make it a component instead of code duplication
 
