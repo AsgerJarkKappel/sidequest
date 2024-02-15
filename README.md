@@ -22,9 +22,8 @@
 
 # TODO navbar
 
-- Fix bugs: NAvbar not working
 - Like to make it more button like in drop down and topnav, just for easier nav
-- Also when pressing next to box it should shut down, like on cv page.
+- When page selected, drop down should untoggle.
 
 - backlog - make it a component instead of code duplication
 

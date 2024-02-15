@@ -13,6 +13,10 @@ function getSectionContent(id) {
       return aboutSection;
     case "projects":
       return projectsSection;
+    case "nested":
+      return cvSection;
+    case "contact":
+      return contactSection;
     case "editor":
       return editorSection;
     default:
@@ -29,7 +33,7 @@ const homeSection = `
         <div class="pic-container">
             <img src="/Resources/images/profilePic.png" alt="My face"/>
         </div>
-        <p class="greetings">Hello!</p>
+        <p class="greetings">&lt; Hello World! &sol;&gt;</p>
         <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
         <p class="under-title">I'm interested in <span style="font-weight: bold;">UI/UX design</span> and work as a <span style="font-weight: bold;">Front-end developer</span>.
             This website is my portfolio and it will be updated with new projects and features to highlight my skills within IT and Design. <br> Feel free to explore and contact me!
@@ -37,13 +41,72 @@ const homeSection = `
     </div>
 
     <div class="navigation-buttons-container">
-        <a href="#home" class="navigators">Home</a> 
-        <a href="#about" class="navigators">About</a> 
-        <a href="#projects" class="navigators">Projects</a>
+        <a href="#about" class="nav-btn">about</a> 
+        <a href="#projects" class="nav-btn">Projects</a> 
+        <a href="#contact" class="nav-btn">Contact</a>
     </div>
   </div>
 `;
-const aboutSection = `<div class="grid-container">
+const aboutSection = `
+<div class="about-page-container">
+        <div class="about-item">
+            
+            <div class="about-pic-container flexBig">
+                <h1 class="about-title">About me</h1>
+                <img src="/Resources/images/profilePic.png" alt="My face"/>
+            </div>
+            <span>My Name is Asger Kappel, I'm 25 years old and a recently graduated 
+                        Master of Science (MSc) in IT-Product Development graduated from
+                        Aarhus university. Exited to start my career
+                        in IT and learn from the best in the business
+                        to build on my skills and acquire new expertises.
+                        Interested in all aspects of developing
+                        IT products, understanding users’ needs, and
+                        developing software on both front- and backend
+                        side to facilitate user needs. I work well
+                        in teams and I am capable of working on individual
+                        tasks as well. I enjoy responsibility and
+                        solving my tasks with quality and efficiency
+                        drives me.<br><br>
+
+                        You can download my CV below or open an online version, <span style="font-weight:bold;"> online version is destop only.</span>
+            </span>
+
+            <div class="cv-btn-container">
+                <a href="#nested" class="cv-nav-btn">See Online CV</a> 
+                <a href="../Resources/Asger_CV.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
+            </div>
+        </div>
+
+        <div class="about-item">
+            
+            <h1 class="about-title">About this Website</h1>
+            
+            <span>This website is my portfolio. Its existence is to showcase my
+                skills within software development and UI/UX Design. The motivation behind
+                beginning this Portfolio project was to address shortcommings related to
+                my capabilities and understanding of software developement. To address this 
+                I outlined a few simple rules with this project</span>
+
+            <div class="rules-item">    
+                <ul class="rules">
+                    <li>Do it yourself</li>
+                    <li>Understand every line of code</li>
+                    <li>Use design guidelines for good UX</li>
+                </ul>
+            </div>
+            <span style="margin-top:0; margin-bottom:10px">By adhearing to these rules I ensure that I learn how to develop software
+            by actually doing it and keep my UX skills sharp, and I can also with full transparency show my capabilities.<br>
+            <br>This portfolio-website is static and is developed using HTML, CSS and JavaScript. The project page will be updated
+            with projects were I will use different technologies to gain full-stack experience and have fun.
+            </span>
+        </div>
+    </div>
+`;
+const projectsSection = `
+    `;
+
+const cvSection = `<div class="grid-container">
                 
             <div class="item-sidebar">
                 <aside class="sidebar-left">
@@ -192,11 +255,8 @@ const aboutSection = `<div class="grid-container">
               <img src="/Resources/images/BachelorFag.png" alt="Courses"/>
             </div>
         </div>
-    </body>
-`;
-const projectsSection = `
-    <div class="section">
-        <h1 class="sectionTitle">Projects</h1>
-        <p>Just this demo</p>
-    </div>
-`;
+    </body>`;
+
+const contactSection = `
+    <p>Suck ass</p>
+    `;
