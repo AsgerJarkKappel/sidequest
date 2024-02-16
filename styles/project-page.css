@@ -1,0 +1,72 @@
+.projects-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 90%;
+        min-width: 350px;
+}
+
+.projects-container > a{
+    color: black;
+    text-decoration: none;
+}
+
+.project-item{
+    width: 350px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    transition: transform .2s;
+    
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+
+.project-item > img {
+            opacity:0.5;
+            width: 100%;
+            object-fit: cover;
+        }
+
+.project-item > h2{
+    margin-top: 10px;
+    padding: 0;
+    color: var(--main);
+}
+
+.project-item > span{
+    padding: 10px;
+}
+
+.tech-stack{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-stack > img{
+    height: 70%;
+}
+
+.project-item:hover{
+    transform: scale(1.02);
+
+}
+
+@media only screen and (max-width: 600px) { /*change to 600, 900 to test*/
+.project-item{
+    width: 100%;
+}
+}

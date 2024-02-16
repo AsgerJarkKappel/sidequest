@@ -1,12 +1,20 @@
+# Links
+
+- https://www.flaticon.com/search?word=css
+
 # TODO
 
 - Check if you can remove one of the pop-up html elements by changing the source of the image with javaScript, this would clean up the code.
 
-- Look at responiveness (A lot needs addressing)
+- look at how to center the layouts on screen, not in mainContent class, because it will happen on every page and i dont want that ATM
 
 # BUG-List
 
-- The navbar disappears when the screen is made big again, but only after the hamburger menu has been pressed. Hamburger -> Close dropdown -> resize to big screen -> no navbar links
+Clear
+
+# TODO project-page
+
+- Items are anchor tags, look into this
 
 # TODO landing-page
 
@@ -14,11 +22,7 @@
 
 # TODO About page
 
-- i think remake it, it looks ugly and it is not responsive
-
-# TODO navbar
-
-- Active class should be true on each page
+- text/rewrite
 
 # TODO navbar
 

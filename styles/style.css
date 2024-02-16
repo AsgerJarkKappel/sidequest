@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: var(--back);
   scrollbar-gutter: stable;
@@ -14,11 +14,15 @@ body {
 /* Navigation */
 header {
   background-color: var(--compliment);
+  top: 0; /*Makes sticky work*/
   width: 100vw;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
 }
 
 nav {
@@ -61,7 +65,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh; /*This might fuck something up in the future*/
+     /*This might fuck something up in the future*/
     width: 100vw;
 }
 
@@ -95,27 +99,14 @@ nav {
     background-color: var(--compliment);
     width: 50%;
     /*Border radius can be played with*/
-    border-bottom-left-radius: 50vh;
-    border-bottom-right-radius: 50vh;
-    height: calc(100vh - 500px);
-    padding-top: 60px;
+    border-bottom-left-radius: 10px;
+    height: calc(fit-content+200px);
+    padding-top: 20px;
     gap: 10vh;
+    padding-bottom:20px;
   }
 
   .navigation-items.active {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 58px;
-    background-color: var(--compliment);
-    width: 50%;
-    /*Border radius can be played with*/
-    border-bottom-left-radius: 50vh;
-    border-bottom-right-radius: 50vh;
-    height: calc(100vh - 500px);
-    padding-top: 60px;
-    gap: 10vh;
   }
 }

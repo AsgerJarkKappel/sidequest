@@ -104,6 +104,26 @@ const aboutSection = `
     </div>
 `;
 const projectsSection = `
+    <div class="projects-container">
+        <a href="#home">
+            <div class="project-item">
+                <img src="Resources/images/portfolio-project.png">
+                <h2>Portfolio</h2>
+                <span>This project is a standart portfolio project aimed at showcasing
+                    and learning front-end development.<br>
+                    <span style="font-weight:bold">This project is ongoing and exploratory
+                    </span>,
+                    both on the software and UX-side.
+                </span>
+        
+                <div class="tech-stack">
+                    <img src="Resources/images/html-5.png">
+                    <img src="Resources/images/css-3.png">
+                    <img src="Resources/images/js.png">
+                </div>
+            </div>
+        </a>
+    </div>
     `;
 
 const cvSection = `<div class="grid-container">
@@ -258,5 +278,20 @@ const cvSection = `<div class="grid-container">
     </body>`;
 
 const contactSection = `
-    <p>Suck ass</p>
-    `;
+    <div class="about-page-container">
+        <div class="about-item">
+            <h1 class="about-title">Contact me</h1>
+            <span>Feel free to contact me, my contact details are listed below.
+            </span>
+
+            <div class="rules-item">    
+                <ul class="rules">
+                    <li><span style="font-weight:bold;">E-mail: </span> <a href = "mailto:asger.k@hotmail.com?subject = Feedback&body = Message">asger.k@hotmail.com</a></li>
+                    <li><span style="font-weight:bold;">Phone: </span> <span>+45 53 38 48 96</span></li>
+                    <br>
+                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="../Resources/images/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+`;
