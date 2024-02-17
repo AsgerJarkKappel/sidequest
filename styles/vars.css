@@ -1,0 +1,13 @@
+:root {
+    --black: #212121;
+    --compliment: #1776f2;
+    --main: #f29317;
+    --error: #f22517;
+    --white: #FAFAFA;
+    --back: #d6d6d6;
+
+    --background: background-color: #dde1e8;
+    --main-font: Arial, Helvetica, sans-serif;
+    --boxShadow: box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  }
+  

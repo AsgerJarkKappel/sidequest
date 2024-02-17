@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--back);
+  scrollbar-gutter: stable;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation */
+header {
+  background-color: var(--compliment);
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+/*.logo-container > a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+}*/
+.navigation-items {
+  display: flex;
+  gap: 40px;
+}
+.navigation-items > a {
+  color: var(--white);  
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: .4s ease-in-out;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+#mainContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle {
+    color: var(--white);
+}
+
+.section > p {
+    color: var(--white);
+    font-family: var(--main-font);
+}
+
+.editorWrapper {
+    background-color: var(--white);
+}
+@media screen and (max-width:768px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .hamburger #closeHam {
+    display: none;
+  }
+  .navigation-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: var(--compliment);
+    width: 50%;
+    /*Border radius can be played with*/
+    border-bottom-left-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    height: calc(100vh - 500px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+
+  .navigation-items.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: var(--compliment);
+    width: 50%;
+    /*Border radius can be played with*/
+    border-bottom-left-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    height: calc(100vh - 500px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+}

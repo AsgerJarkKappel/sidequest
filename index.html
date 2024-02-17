@@ -5,51 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
     <link rel="stylesheet" href="/styles/landing-page.css">
+    <link rel="stylesheet" href="/styles/cv.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/common-style.css">
-    <link rel="stylesheet" href="/Resources/components/navbar/nav.css"
-    <script src="/scripts/landing-page.js"></script>
     <script src="/Resources/components/navbar/header.js"></script>
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/project-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 </head>
 
 <body>
-    <!-- This was component, backlog!!
-        <header id="header"><nav-element></nav-element></header>-->   
-    <nav>   
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="#news">Projects</a>
-        <a href="/views/cv.html">About me</a>
-        <a href="#about">Contact me</a>
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    </nav>
-    
-    <div class="content-container">
-        <div class="presentation">
-            <div class="pic-container">
-                        <img src="/Resources/images/profilePic.png" alt="My face"/>
-                    </div>
-            <p class="greetings">Hello!</p>
-            <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
-            <p class="under-title">I'm interested in <span style="font-weight: bold;">UI/UX design</span> and work as a <span style="font-weight: bold;">Front-end developer</span>.
-                This website is my portfolio and it will be updated with new projects and features to highlight my skills within IT and Design. Feel free to explore and contact me!
-            </p>
-        </div>
+    <header class="navigation-header">
+        <nav>
+            <!--<div class="logo-container">
+                <a href="./index.html">Logo</a>s
+            </div>-->
+            <div class="navigation-items" id="navigation-items">
+                <a href="#home" class="navigators">Home</a> 
+                <a href="#about" class="navigators">About</a> 
+                <a href="#projects" class="navigators">Projects</a>
+                <a href="#contact" class="navigators">Contact Me</a> 
+            </div>
+            
+            <div class="hamburger">
+                <span id="openHam" onclick="openDropDown()">&#9776;</span>
+                <span id="closeHam" onclick="closeDropDown()">&#x2716;</span>
+            </div>
+        </nav>
+    </header>
 
-        <div class="navigation-buttons-container">
-            <button class="nav-btn">Projects</button>
-            <button id="aboutMeBtn" onclick="navigateToAboutMe()" class="nav-btn">About me</a></button>
-            <button class="nav-btn">Contact</button>
-        </div>
-    </div>
+    <main>
+        <!--This section is the section that changes!-->
+        <section id="mainContent"></section>
+    </main>
 
-
+   <script src="scripts/index.js"></script>
+   <script src="scripts/sections.js"></script>
+   <script src="scripts/nav.js"></script>
+   <script src="scripts/about-me.js"></script>
 </body>
 </html>

@@ -1,8 +1,20 @@
+# Links
+
+- https://www.flaticon.com/search?word=css
+
 # TODO
 
 - Check if you can remove one of the pop-up html elements by changing the source of the image with javaScript, this would clean up the code.
 
-- Look at responiveness (A lot needs addressing)
+- look at how to center the layouts on screen, not in mainContent class, because it will happen on every page and i dont want that ATM
+
+# BUG-List
+
+Clear
+
+# TODO project-page
+
+- Items are anchor tags, look into this
 
 # TODO landing-page
 
@@ -10,15 +22,12 @@
 
 # TODO About page
 
-- i think remake it, it looks ugly and it is not responsive
+- text/rewrite
 
 # TODO navbar
 
-- Active class should be true on each page
-
-# TODO navbar
-
-- Fix bugs: NAvbar not working
+- Like to make it more button like in drop down and topnav, just for easier nav
+- When page selected, drop down should untoggle.
 
 - backlog - make it a component instead of code duplication
 
