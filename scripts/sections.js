@@ -131,7 +131,7 @@ const cvSection = `<div class="grid-container">
             <div class="item-sidebar">
                 <aside class="sidebar-left">
                     <div class="item-pictureCircle">
-                        <img src="/Resources/images/profile-pic.png" alt="My face">
+                        <img src="Resources/images/profile-pic.png" alt="My face">
                     </div>
                     
                     <div class="item-about"><h5>About</h5>
