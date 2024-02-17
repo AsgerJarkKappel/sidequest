@@ -262,7 +262,7 @@ const cvSection = `<div class="grid-container">
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('masterCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="/Resources/images/kandidat-fag.png" alt="Courses"/>
+              <img src="Resources/images/kandidat-fag.png" alt="Courses"/>
             </div>
         </div>
 
@@ -272,7 +272,7 @@ const cvSection = `<div class="grid-container">
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('bachelorCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="/Resources/images/bachelor-fag.png" alt="Courses"/>
+              <img src="/esources/images/bachelor-fag.png" alt="Courses"/>
             </div>
         </div>
     </body>`;
@@ -289,7 +289,7 @@ const contactSection = `
                     <li><span style="font-weight:bold;">E-mail: </span> <a href = "mailto:asger.k@hotmail.com?subject = Feedback&body = Message">asger.k@hotmail.com</a></li>
                     <li><span style="font-weight:bold;">Phone: </span> <span>+45 53 38 48 96</span></li>
                     <br>
-                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="../Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
+                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
                 </ul>
             </div>
         </div>
