@@ -154,7 +154,7 @@ const cvSection = `<div class="grid-container">
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Phone:</span> 53384896</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">E mail:</span> asger.k@hotmail.com</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Address: </span> Søndre Ringgade 77, st tv 8000 Århus</span></p>
-                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
+                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="Resources/images/linked-logo.png" alt="Open my linkedIn profile"></a></p>
                     </div>
                 </aside>
             </div>
@@ -289,7 +289,7 @@ const contactSection = `
                     <li><span style="font-weight:bold;">E-mail: </span> <a href = "mailto:asger.k@hotmail.com?subject = Feedback&body = Message">asger.k@hotmail.com</a></li>
                     <li><span style="font-weight:bold;">Phone: </span> <span>+45 53 38 48 96</span></li>
                     <br>
-                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
+                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="Resources/images/linked-logo.png" alt="Open my linkedIn profile"></a></p>
                 </ul>
             </div>
         </div>
