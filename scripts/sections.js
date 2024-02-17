@@ -31,7 +31,7 @@ const homeSection = `
   <div class="content-container">
     <div class="presentation">
         <div class="pic-container">
-            <img src="Resources/images/profile-pic.png" alt="My face"/>
+            <img src="Resources/images/profile-pic.png" alt="My face">
         </div>
         <p class="greetings">&lt; Hello World! &sol;&gt;</p>
         <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
@@ -53,7 +53,7 @@ const aboutSection = `
             
             <div class="about-pic-container flexBig">
                 <h1 class="about-title">About me</h1>
-                <img src="Resources/images/profile-pic.png" alt="My face"/>
+                <img src="Resources/images/profile-pic.png" alt="My face">
             </div>
             <span>My Name is Asger Kappel, I'm 25 years old and a recently graduated 
                         Master of Science (MSc) in IT-Product Development graduated from
@@ -131,7 +131,7 @@ const cvSection = `<div class="grid-container">
             <div class="item-sidebar">
                 <aside class="sidebar-left">
                     <div class="item-pictureCircle">
-                        <img src="/Resources/images/profile-pic.png" alt="My face"/>
+                        <img src="/Resources/images/profile-pic.png" alt="My face">
                     </div>
                     
                     <div class="item-about"><h5>About</h5>
