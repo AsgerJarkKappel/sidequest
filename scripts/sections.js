@@ -272,7 +272,7 @@ const cvSection = `<div class="grid-container">
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('bachelorCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="/esources/images/bachelor-fag.png" alt="Courses"/>
+              <img src="Resources/images/bachelor-fag.png" alt="Courses"/>
             </div>
         </div>
     </body>`;
