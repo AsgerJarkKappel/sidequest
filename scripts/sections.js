@@ -31,7 +31,7 @@ const homeSection = `
   <div class="content-container">
     <div class="presentation">
         <div class="pic-container">
-            <img src="/Resources/images/profilePic.png" alt="My face"/>
+            <img src="Resources/images/profile-pic.png" alt="My face"/>
         </div>
         <p class="greetings">&lt; Hello World! &sol;&gt;</p>
         <p class="under-title">My name is Asger and I'm an <span style="font-weight: bold;">IT-Product Developer</span>.</p>
@@ -53,7 +53,7 @@ const aboutSection = `
             
             <div class="about-pic-container flexBig">
                 <h1 class="about-title">About me</h1>
-                <img src="/Resources/images/profilePic.png" alt="My face"/>
+                <img src="Resources/images/profile-pic.png" alt="My face"/>
             </div>
             <span>My Name is Asger Kappel, I'm 25 years old and a recently graduated 
                         Master of Science (MSc) in IT-Product Development graduated from
@@ -74,7 +74,7 @@ const aboutSection = `
 
             <div class="cv-btn-container">
                 <a href="#nested" class="cv-nav-btn">See Online CV</a> 
-                <a href="../Resources/Asger_CV.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
+                <a href="../Resources/asger-cv.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
             </div>
         </div>
 
@@ -131,7 +131,7 @@ const cvSection = `<div class="grid-container">
             <div class="item-sidebar">
                 <aside class="sidebar-left">
                     <div class="item-pictureCircle">
-                        <img src="/Resources/images/profilePic.png" alt="My face"/>
+                        <img src="/Resources/images/profile-pic.png" alt="My face"/>
                     </div>
                     
                     <div class="item-about"><h5>About</h5>
@@ -154,7 +154,7 @@ const cvSection = `<div class="grid-container">
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Phone:</span> 53384896</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">E mail:</span> asger.k@hotmail.com</span></p>
                         <p><span style="letter-spacing:0.04em;"><span class="thick-text">Address: </span> Søndre Ringgade 77, st tv 8000 Århus</span></p>
-                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="../Resources/images/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
+                        <p><a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img class="small-linkedIn" src="../Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
                     </div>
                 </aside>
             </div>
@@ -262,7 +262,7 @@ const cvSection = `<div class="grid-container">
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('masterCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="/Resources/images/kandidat_fag.png" alt="Courses"/>
+              <img src="/Resources/images/kandidat-fag.png" alt="Courses"/>
             </div>
         </div>
 
@@ -272,7 +272,7 @@ const cvSection = `<div class="grid-container">
                 <!--&times; is the little x when the pop-up is showing-->
               <span class="close" onclick="closeModal('bachelorCourses')">&times;</span>
               <h2>Master Degree Courses</h2>
-              <img src="/Resources/images/BachelorFag.png" alt="Courses"/>
+              <img src="/Resources/images/bachelor-fag.png" alt="Courses"/>
             </div>
         </div>
     </body>`;
@@ -289,7 +289,7 @@ const contactSection = `
                     <li><span style="font-weight:bold;">E-mail: </span> <a href = "mailto:asger.k@hotmail.com?subject = Feedback&body = Message">asger.k@hotmail.com</a></li>
                     <li><span style="font-weight:bold;">Phone: </span> <span>+45 53 38 48 96</span></li>
                     <br>
-                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="../Resources/images/LI-Logo.png" alt="Open my linkedIn profile"></a></p>
+                    <a href="https://www.linkedin.com/in/asger-jark-kappel-571799221" target="_blank"><img style="width:100px; height:30px;" src="../Resources/images/li-logo.png" alt="Open my linkedIn profile"></a></p>
                 </ul>
             </div>
         </div>
