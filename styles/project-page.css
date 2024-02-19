@@ -42,6 +42,11 @@
     color: var(--main);
 }
 
+.project-item > h3{
+    padding: 0;
+    color: var(--main);
+}
+
 .project-item > span{
     padding: 10px;
 }

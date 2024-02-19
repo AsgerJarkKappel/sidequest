@@ -10,7 +10,6 @@
 
 .presentation{
         box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-        width: 100%;
         background-color: white;
         flex: 2;
         border-radius: 10px;
@@ -44,12 +43,12 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-evenly;
-   width: 100%;
    background-color: rgb(255, 255, 255);
    flex: 1;
    border-radius: 10px;
    min-height: 240px;
    cursor: default;
+   gap: 10px;
 }
 
 .nav-btn{
@@ -64,7 +63,7 @@
         text-decoration: none;
         font-size: 18px;
         font-weight: 500;
-        width: 280px;
+        width: 250px;
         text-align: center;
      }
 
@@ -89,7 +88,7 @@ h1{
     color: white;
 }
 
-@media only screen and (max-width: 900px) { /*change to 600, 900 to test*/
+@media only screen and (max-width: 758px) { /*change to 600, 900 to test*/
     
     .nav-container{
         width: 100%;

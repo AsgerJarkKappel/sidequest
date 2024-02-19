@@ -123,6 +123,18 @@ const projectsSection = `
                 </div>
             </div>
         </a>
+
+        <a href="#home">
+            <div class="project-item">
+                <img src="Resources/images/tahub.png">
+                <h2>TAHub</h2>
+                <h3>2022</h3>
+                <span>Innovation project facilitating hybrid collavoration in a study café at a University.<br>
+                    Project was a semester project with close collaboration with Microsoft Cambridge University.
+                </span>
+                <span style="font-weight:bold;">Full stack Design, UX, User & Domain research, Innovation, Prototyping, Usability Test</span>
+            </div>
+        </a>
     </div>
     `;
 
