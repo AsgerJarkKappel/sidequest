@@ -15,7 +15,7 @@
 
 .project-item{
     width: 350px;
-    height: 500px;
+    height: 550px;
     background-color: var(--white);
     border-radius: 15px;
     display: flex;
@@ -29,6 +29,9 @@
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
 }
 
+.more-icon {
+    height: 50%;
+}
 
 .project-item > img {
             opacity:1;
@@ -49,7 +52,7 @@
 }
 
 .project-item > span{
-    padding: 10px;
+    padding: 5px;
 }
 
 .tech-stack{

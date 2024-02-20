@@ -1,0 +1,29 @@
+.scenario-container{
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+    border: 2px var(--compliment) solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.scenario-container > img {
+    width: 70%;
+    display: inline;
+}
+
+.scenario-container > span{
+    width: 500px;
+}
+
+
+@media only screen and (max-width: 758px) {
+    .scenario-container > span{
+        display: none;
+    }
+
+    .scenario-container{
+        justify-content: center;
+    }
+}
