@@ -76,7 +76,7 @@ const aboutSection = `
 
             <div class="cv-btn-container">
                 <a href="#nested" class="cv-nav-btn">See Online CV</a> 
-                <a href="../Resources/asger-cv.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
+                <a href="Resources/asger-cv.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
             </div>
         </div>
 
@@ -315,10 +315,10 @@ const contactSection = `
 
 const projectTaHubSection = `
  <div class="about-page-container">
-        <div class="about-item flexBig">
+        <div class="tahub-about-item">
             
             <div class="about-pic-container">
-                <h1 class="about-title">About me</h1>
+                <h1 class="tahub-about-title">TA-Hub</h1>
                 
             </div>
 
@@ -396,9 +396,9 @@ const projectTaHubSection = `
             </div>
         </div>
 
-        <div class="about-item" style="max-width:500px; height:fit-content;">
+        <div class="tahub-about-item" style="max-width:500px; height:fit-content;">
             
-            <h1 class="about-title">What did I gain?</h1>
+            <h1 class="tahub-about-title">What did I gain?</h1>
             
             <span style="margin-bottom:10px;">The project gave me experience with <span style="font-weight:bold;">Full stack Design.</span>
                 The project began with creating insight within the domain and understanding user behaviour and needs throughresearch methods.
