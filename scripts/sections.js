@@ -76,7 +76,7 @@ const aboutSection = `
 
             <div class="cv-btn-container">
                 <a href="#nested" class="cv-nav-btn">See Online CV</a> 
-                <a href="https://github.com/AsgerJarkKappel/sidequestgithub/blob/main/Resources/asger-cv.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
+                <a href="asgerjarkkappel.github.io/sidequestgithub/Resources/asger-cv.pdf" target="_blank" class="cv-nav-btn">Download CV PDF</a>
             </div>
         </div>
 
