@@ -1,14 +1,12 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
   box-sizing: border-box;
   background-color: var(--back);
   scrollbar-gutter: stable;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Navigation */
@@ -23,6 +21,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
+  margin: 0;
 }
 
 nav {
@@ -30,7 +29,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 20px;
+  padding: 30px 30px;
   z-index: 1; /*Ended up not being visible/behind, this ensures it is in the foreground*/
 }
 
@@ -60,7 +59,7 @@ nav {
 }
 
 #mainContent {
-    padding: 16px;
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
