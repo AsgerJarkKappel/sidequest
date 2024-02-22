@@ -17,6 +17,12 @@
     width: 500px;
 }
 
+.tahub-about-item > span{
+    color: var(--black);
+    margin: 5%;
+    font-weight: 500;
+}
+
 
 @media only screen and (max-width: 758px) {
     .scenario-container > span{
@@ -43,7 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 800px;
+
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
 }
 
@@ -53,12 +59,6 @@
     font-size: 36px;
 }
 
-.tahub-about-item > span{
-    color: var(--black);
-    margin: 5%;
-    margin-bottom: 0;
-    font-weight: 500;
-}
 
 .rules-item{
     width: 80%;

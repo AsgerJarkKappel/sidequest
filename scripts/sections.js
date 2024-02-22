@@ -1,3 +1,6 @@
+/**Importing pages from different files for maintainability*/
+//import projectSWEASection from "/swea.js";
+
 /**
  * A simple switch case that just returns a string based on the
  * input id/value.
@@ -21,6 +24,8 @@ function getSectionContent(id) {
       return editorSection;
     case "projectsTaHub":
       return projectTaHubSection;
+    case "projectsSWEA":
+      return projectSWEASection;
     default:
       return '<span class="errTxt">Error 404</span>';
   }
@@ -136,6 +141,19 @@ const projectsSection = `
                     Project was a semester project with close collaboration with Microsoft Cambridge University.
                 </span>
                 <span style="font-weight:bold;">Full stack Design, UX, User & Domain research, Innovation, Prototyping, Usability Test</span>
+                <div></div>
+                <span style="font-weight:bold;">Press to read more <img class="more-icon" src="Resources/images/share.png"></span>
+            </div>
+        </a>
+
+        <a href="#projectsSWEA">
+            <div class="project-item">
+                <img src="Resources/images/swea.png">
+                <h2>SWEA</h2>
+                <h3>2019</h3>
+                <span>Softare project building a small simple Civilizations game.
+                </span>
+                <span style="font-weight:bold;">Design patterns, Software Principles, Testing</span>
                 <div></div>
                 <span style="font-weight:bold;">Press to read more <img class="more-icon" src="Resources/images/share.png"></span>
             </div>
@@ -400,7 +418,7 @@ const projectTaHubSection = `
             
             <h1 class="tahub-about-title">What did I gain?</h1>
             
-            <span style="margin-bottom:10px;">The project gave me experience with <span style="font-weight:bold;">Full stack Design.</span>
+            <span style="margin-bottom:30px;">The project gave me experience with <span style="font-weight:bold;">Full stack Design.</span>
                 The project began with creating insight within the domain and understanding user behaviour and needs throughresearch methods.
                 The research was used to conceptualize system requirements and several prototype iterations were created andevaluated. The best parts of
                 every prototype was combined for final concept which was evaluated with target users.
@@ -409,6 +427,39 @@ const projectTaHubSection = `
                 a fair chance of partaking, even students who would be unable to physically attend the study café or even connect remotely during the café.
                 The quing of students questions was something our collaborative part Microsoft Cambridge Research was very impressed with as we handled a complex
                 and unfair scenario by innovating on the simple concept of quing.  
+            </span>
+            
+        </div>
+    </div>
+`;
+
+const projectSWEASection = `
+ <div class="about-page-container">
+        <div class="tahub-about-item">
+            
+            <div class="about-pic-container">
+                <h1 class="tahub-about-title">Civilizations</h1>
+            </div>
+
+            <img src="Resources/images/swea.png" style="padding: 10px; width:50%;" alt="My face">
+            <span style="margin-bottom:20px;">This game project was developed under the course <span class="bold-text">Software
+                Engineering & Architecture (SWEA)</span>.<br>
+                The game was gradually developed and new features and functionality were weekly assignments
+                until we had a working game.
+                The project was an introduction to principles and methods of software developement
+                specifically <span class="bold-text">Test Driven Development (TDD).<span>
+            </span>
+            
+        </div>
+
+        <div class="tahub-about-item" style="max-width:500px; height:fit-content;">
+            
+            <h1 class="tahub-about-title">What did I gain?</h1>
+            
+            <span style="margin-bottom:10px;">The project gave me hands-on experience with how to develop software.
+                It shifted my view from lines of codes to understanding the values of encapsulation and code seperation, design patterns,
+                testing and Test-driven Development, clean and readable code among documentation, all wiith the purpose of
+                developing <span class="bold-text">reliable and maintainable software</span>.
             </span>
             
         </div>

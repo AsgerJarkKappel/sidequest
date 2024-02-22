@@ -80,6 +80,11 @@ nav {
 .editorWrapper {
     background-color: var(--white);
 }
+
+.bold-text{
+    font-weight: 900;
+  }
+
 @media screen and (max-width:768px) {
   .hamburger {
     display: flex;
@@ -107,9 +112,5 @@ nav {
 
   .navigation-items.active {
     display: flex;
-  }
-
-  .bold-text{
-    font-weight: 900;
   }
 }
