@@ -158,6 +158,19 @@ const projectsSection = `
                 <span style="font-weight:bold;">Press to read more <img class="more-icon" src="Resources/images/share.png"></span>
             </div>
         </a>
+
+        <!--<a href="">-->
+            <div class="project-item">
+                <div class="placeholder"></div>
+                <h2>More comming soon</h2>
+                <h3>20--</h3>
+                <span>Placeholder.
+                </span>
+                <span style="font-weight:bold;">Placeholder learning objectives</span>
+                <div></div>
+                <span style="font-weight:bold;">Press to read more <img class="more-icon" src="Resources/images/share.png"></span>
+            </div>
+        <!--</a>-->
     </div>
     `;
 
